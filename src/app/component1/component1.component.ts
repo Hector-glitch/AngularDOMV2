@@ -6,6 +6,8 @@ import {yellowSubmarine} from './funcions.js';
 import {changeSize} from "./funcions.js";
 // @ts-ignore
 import {countWords} from "./funcions.js";
+// @ts-ignore
+import {showDesplegable} from "./funcions.js";
 
 @Component({
   selector: 'app-component1',
@@ -28,6 +30,7 @@ ngOnInit(){
   yellowSubmarine()
   changeSize()
   countWords()
+  showDesplegable()
 
   let img = document.getElementById("imatge") as HTMLImageElement
   img.src = "./assets/gatigos.jpg"

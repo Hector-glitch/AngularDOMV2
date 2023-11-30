@@ -15,3 +15,15 @@ export function countWords() {
   let numeroFinal = document.getElementById('numeroPraules')
   numeroFinal.innerHTML="Numero de paraules: "+ paraules.length
 }
+
+export function showDesplegable() {
+  let dropdown = document.getElementById("colors");
+  let valors = [];
+
+  for (let i = 0; i < dropdown.options.length; i++) {
+    valors.push(dropdown.options[i].value);
+  }
+
+  let nodeInfoColor = document.getElementById("infColors");
+  nodeInfoColor.innerHTML = "Elements del desplegable: " + valors.join(", ");
+}
